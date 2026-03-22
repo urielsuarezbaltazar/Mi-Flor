@@ -8,11 +8,8 @@ const musica = document.getElementById("musica");
 function crearPetalos(cantidad, contenedor) {
     for (let i = 0; i < cantidad; i++) {
         const petalo = document.createElement("div");
-    petalo.style.transform = `
-    translate(-50%, -50%)
-    rotate(${i * (360 / cantidad)}deg)
-    translateY(-50px)
-`;
+        petalo.style.transform = `rotate(${i * (360 / cantidad)}deg) translate(-50%, -50%)`;
+        contenedor.appendChild(petalo);
     }
 }
 
