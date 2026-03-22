@@ -48,7 +48,7 @@ body {
     border-radius: 50%;
     top: 30%;
     left: 70%;
-    transform: translate(-10%, -50%);
+    transform: translate(-50%, -50%);
     z-index: 2;
 }
 
