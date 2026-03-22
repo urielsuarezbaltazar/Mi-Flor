@@ -70,7 +70,9 @@ body {
     background: #c69c6d;
     padding: 15px;
     border-radius: 10px;
-    top: 50%;
+    top: 30%;
+    left: 70%;
+    transform: translate(-50%, -50%);
     text-align: center;
     width: 220px;
     display: none;
