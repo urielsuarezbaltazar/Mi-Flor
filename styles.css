@@ -73,8 +73,9 @@ body {
     top: 40%;
     text-align: center;
     width: 220px;
-    display: none; /* aparece con JS */
+    display: none;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 999;
 }
 
 /* Texto de la nota */
