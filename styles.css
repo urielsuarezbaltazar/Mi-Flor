@@ -1,0 +1,129 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo cielo */
+body {
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #87CEEB, #ffffff);
+    overflow: hidden;
+}
+
+/* Título */
+.titulo {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+/* Contenedor principal */
+.contenedor {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Flor principal */
+.flor {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+}
+
+/* Centro de la flor */
+.centro {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: #5a3e1b;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+/* Pétalos */
+.petalos div {
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    background: yellow;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform-origin: center -20px;
+}
+
+/* Nota */
+.nota {
+    position: absolute;
+    background: #c69c6d;
+    padding: 15px;
+    border-radius: 10px;
+    top: 40%;
+    text-align: center;
+    width: 220px;
+    display: none; /* aparece con JS */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Texto de la nota */
+.nota p {
+    color: #3b2a1a;
+    font-size: 14px;
+}
+
+/* Contenedor de flores extra */
+#floresExtra {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* Flores extra */
+.flor-extra {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+}
+
+/* Centro flor extra */
+.flor-extra .centro {
+    width: 30px;
+    height: 30px;
+}
+
+/* Pétalos flor extra */
+.flor-extra .petalos div {
+    width: 20px;
+    height: 40px;
+}
+
+/* Animación de aparición */
+@keyframes aparecer {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Aplicar animación */
+.flor-extra {
+    animation: aparecer 0.5s ease forwards;
+}
