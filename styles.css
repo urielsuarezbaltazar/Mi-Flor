@@ -46,8 +46,8 @@ body {
     height: 60px;
     background: #5a3e1b;
     border-radius: 50%;
-    top: 5%;
-    left: 5%;
+    top: 10%;
+    left: 10%;
     transform: translate(-50%, -50%);
     z-index: 2;
 }
